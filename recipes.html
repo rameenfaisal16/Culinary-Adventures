@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Recipes</title>
+
+    <style>
+      .container {
+        padding: 20px;
+      }
+      .main_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f7f7f7;
+        border-top: 5px solid #1098ad;
+        border-bottom: 5px solid #1098ad;
+        padding: 30px;
+        margin-bottom: 30px;
+      }
+
+      .recipe {
+        background-color: #f7f7f7;
+        /* border-top: 5px solid #1098ad;
+        border-bottom: 5px solid #1098ad; */
+        padding: 30px 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        /* flexbox */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1098ad;
+      }
+
+      .vote-button {
+        background-color: #4ac9dd;
+        border: none;
+        color: black;
+        font-size: 15px;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 10px 20px;
+        margin-top: auto;
+        width: 100%;
+        font-size: 15px;
+        border-radius: 8px;
+      }
+
+      .vote-button:hover {
+        color: white;
+        background-color: rgb(43, 184, 224);
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .card img {
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .card-text {
+        margin-bottom: 20px;
+      }
+
+      .back-link {
+        text-decoration: none;
+        color: #1098ad;
+        font-weight: bold;
+        font-size: 1.25rem;
+      }
+
+      .back-link:hover {
+        color: #075f75;
+      }
+      .footer {
+        background-color: #f7f7f7;
+        border-top: 5px solid #1098ad;
+        padding: 20px;
+        text-align: center;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="main_header">
+        <h1 class="recipe">Recipes</h1>
+        <a href="index.html" class="back-link">Back To Home Page</a>
+      </header>
+
+      <p>
+        Discover delicious recipes from around the world. Whether you're looking
+        for a quick weeknight dinner or an impressive dish for a special
+        occasion, we've got you covered.
+      </p>
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="/img/Lasagna.jpg" class="card-img-top" alt="Lasagna" />
+            <div class="card-body">
+              <h5 class="card-title">Classic Lasagna</h5>
+              <p class="card-text">
+                A classic Italian dish with layers of pasta, rich meat sauce,
+                and creamy cheese.
+              </p>
+              <button class="vote-button" type="submit">Get Recipe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="/img/pasta.jpg" class="card-img-top" alt="pasta" />
+            <div class="card-body">
+              <h5 class="card-title">Gourmet Penne</h5>
+              <p class="card-text">
+                A versatile and beloved dish with a hint of additional
+                ingredients for a gourmet twist.
+              </p>
+              <button class="vote-button" type="submit">Get Recipe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="/img/white-sauce-pasta.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Creamy Alfredo Pasta</h5>
+              <p class="card-text">
+                A delightful pasta dish featuring a rich and creamy Alfredo
+                sauce, perfect for a comforting meal.
+              </p>
+              <button class="vote-button" type="submit">Get Recipe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="/img/pizza.jpg" class="card-img-top" alt="pizza" />
+            <div class="card-body">
+              <h5 class="card-title">Artisan Margherita Pizza</h5>
+              <p class="card-text">
+                A classic favorite with fresh tomatoes, mozzarella, and basil,
+                offering a taste of Italy in every bite.
+              </p>
+              <button class="vote-button" type="submit">Get Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="/img/burger.jpg" class="card-img-top" alt="burger" />
+            <div class="card-body">
+              <h5 class="card-title">Gourmet Cheeseburger</h5>
+              <p class="card-text">
+                A juicy and flavorful burger, topped with melted cheese and
+                fresh ingredients, ideal for any occasion.
+              </p>
+              <button class="vote-button" type="submit">Get Recipe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="/img/chicken-wrap.jpg" class="card-img-top" alt="wraps" />
+            <div class="card-body">
+              <h5 class="card-title">Spicy Chicken Wraps</h5>
+              <p class="card-text">
+                A versatile wrap filled with spicy chicken, fresh veggies, and a
+                hint of tangy sauce.
+              </p>
+              <button class="vote-button" type="submit">Get Recipe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="/img/biryani.jpg" class="card-img-top" alt="biryani" />
+            <div class="card-body">
+              <h5 class="card-title">Exotic Biryani</h5>
+              <p class="card-text">
+                A flavorful and aromatic rice dish with tender meat and exotic
+                spices, perfect for special occasions.
+              </p>
+              <button class="vote-button" type="submit">Get Recipe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="/img/loaded-fries.jpg"
+              class="card-img-top"
+              alt="loaded fries"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Loaded Gourmet Fries</h5>
+              <p class="card-text">
+                Crispy fries topped with a blend of cheeses, savory meats, and
+                fresh herbs for a mouth-watering treat.
+              </p>
+              <button class="vote-button" type="submit">Get Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img
+              src="/img/Chocolate Chip Cookies.jpg"
+              class="card-img-top"
+              alt="cookies"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chocolate Chip Delight Cookies</h5>
+              <p class="card-text">
+                Soft and chewy cookies filled with gooey chocolate chips, a
+                timeless favorite.
+              </p>
+              <button class="vote-button" type="submit">Get Recipe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="/img/dessert 2.jpg" class="card-img-top" alt="donuts" />
+            <div class="card-body">
+              <h5 class="card-title">Glazed Donuts</h5>
+              <p class="card-text">
+                Light and fluffy donuts with a sweet glaze, perfect for any time
+                of day.
+              </p>
+              <button class="vote-button" type="submit">Get Recipe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="/img/molten-lava.jpg"
+              class="card-img-top"
+              alt="molten lava cake"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Molten Chocolate Lava Cake</h5>
+              <p class="card-text">
+                A rich and decadent chocolate cake with a gooey, molten center,
+                ideal for dessert lovers.
+              </p>
+              <button class="vote-button" type="submit">Get Recipe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="/img/pie.jpg" class="card-img-top" alt="PIE" />
+            <div class="card-body">
+              <h5 class="card-title">Homemade Fruit Pie</h5>
+              <p class="card-text">
+                A classic pie with a flaky crust and sweet, fruity filling,
+                bringing comfort in every bite.
+              </p>
+              <button class="vote-button" type="submit">Get Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>© 2024 Culinary Adventures. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

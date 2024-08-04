@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Culinary Adventures</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="main_header">
+        <h2>Welcome To Culinary Adventures</h2>
+        <nav>
+          <!-- inserting a home and then making a new file and add that link over here -->
+          <a href="recipes.html">Recipes</a>
+          <a href="cooking_tips.html">Cooking Tips</a>
+          <a href="food_gallery.html">Food Gallery</a>
+        </nav>
+      </header>
+
+      <!-- <div class="row"> -->
+      <article>
+        <header>
+          <!-- <h1 class="post_header">CULINARY ADVENTURES</h1>
+          <p>
+            At Culinary Adventures, we believe that food is not just sustenance;
+            it's an experience. Our mission is to inspire you to explore new
+            cuisines, try out exciting recipes, and refine your cooking skills.
+            Whether you're a seasoned chef or just starting out, there's
+            something here for everyone.
+          </p>
+
+          <p>
+            At Culinary Adventures, we believe that food is not just sustenance;
+            it's an experience. Our mission is to inspire you to explore new
+            cuisines, try out exciting recipes, and refine your cooking skills.
+            Whether you're a seasoned chef or just starting out, there's
+            something here for everyone.
+          </p> -->
+
+          <div class="carousel">
+            <img class="carosel-img" src="hero-section.jpg" alt="food" />
+            <blockquote class="testimonial">
+              <p class="testimonial-text">
+                "One cannot think well, love well, sleep well, if one has not
+                dined well."
+              </p>
+
+              <p class="testimonial-author">– Virginia Woolf</p>
+
+              <p class="testimonial-job">
+                English writer and modernist pioneer.
+              </p>
+            </blockquote>
+
+            <button class="btn btn-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+
+            <button class="btn btn-right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+            <div class="dots">
+              <button class="dot dot-fill">&nbsp;</button>
+              <button class="dot">&nbsp;</button>
+              <button class="dot">&nbsp;</button>
+              <button class="dot">&nbsp;</button>
+            </div>
+          </div>
+
+          <!-- INSERTING AN IMAGE -->
+
+          <!-- <img
+          src="img/home.jpg"
+          z
+          alt=" Culinary Adventures"
+          width="320"
+          height="180"
+        /> -->
+        </header>
+
+        <aside>
+          <h1 class="main_aside">Popular Posts</h1>
+
+          <ul class="list">
+            <li class="Posts">
+              <img
+                src="img/home1.jpg"
+                alt="weeknight dinner"
+                width="100"
+                height="100"
+                class="post_img"
+              />
+              <p>
+                <a href="recipes.html" class="links"
+                  >10 Easy Weeknight Dinners</a
+                >
+              </p>
+            </li>
+
+            <li class="Posts">
+              <img
+                src="img/dessert 2.jpg"
+                alt="Dessert"
+                width="100"
+                height="100"
+                class="post_img"
+              />
+              <p>
+                <a href="recipes.html" class="links"
+                  >5 Must-Try Dessert Recipes</a
+                >
+              </p>
+            </li>
+
+            <li class="Posts">
+              <img
+                src="img/home.jpg"
+                alt="tips"
+                width="100"
+                height="100"
+                class="post_img"
+              />
+              <p>
+                <a href="cooking_tips.html" class="links"
+                  >Top 10 Cooking Tips for Beginners</a
+                >
+              </p>
+            </li>
+          </ul>
+
+          <section id="daily-recipe" class="daily-recipe">
+            <h1 class="Highlight">Today's Recipe Highlight</h1>
+            <div class="recipe-highlight">
+              <img src="/img/daily1.jpg" alt="Daily Recipe" class="post_img" />
+              <h3><u>Spicy Thai Noodles</u></h3>
+              <p>
+                Enjoy this easy and delicious Thai noodle recipe packed with
+                flavors.
+              </p>
+              <a href="recipes.html" class="links"><b>Get the Recipe</b></a>
+            </div>
+          </section>
+
+          <section id="customer-favorites" class="customer-favorites">
+            <h1 class="favorite">Customer Favorites</h1>
+            <div class="favorite-item">
+              <img src="/img/Lasagna.jpg" alt="Favorite 1" class="post_img" />
+              <h3><u>Classic Lasagna</u></h3>
+              <p>A family favorite that everyone loves.</p>
+              <a href="favorite1.html" class="links">Read More</a>
+            </div>
+            <div class="favorite-item">
+              <img
+                src="/img/Chocolate Chip Cookies.jpg"
+                alt="Favorite 2"
+                class="post_img"
+              />
+              <h3><u>Chocolate Chip Cookies</u></h3>
+              <p>Perfectly chewy and delicious cookies.</p>
+              <a href="favorite2.html" class="links">Read More</a>
+            </div>
+          </section>
+
+          <section class="interactive-poll">
+            <h1 class="poll">What's Your Favorite Cuisine?</h1>
+            <form action="poll-result.php" method="post">
+              <label>
+                <input type="checkbox" name="cuisine" value="Italian" /> Italian
+              </label>
+              <label>
+                <input type="checkbox" name="cuisine" value="Mexican" /> Mexican
+              </label>
+              <label>
+                <input type="checkbox" name="cuisine" value="Chinese" /> Chinese
+              </label>
+              <label>
+                <input type="checkbox" name="cuisine" value="Pakistani" />
+                Pakistani
+              </label>
+            </form>
+            <div class="vote-button-container">
+              <button class="vote-button" type="submit">VOTE</button>
+            </div>
+          </section>
+        </aside>
+        <!-- </div> -->
+        <footer class="footer">
+          <p>copyright &copy; 2027 by Culinary Adventures</p>
+        </footer>
+      </article>
+
+      <button class="button">❤️ like</button>
+    </div>
+  </body>
+</html>
